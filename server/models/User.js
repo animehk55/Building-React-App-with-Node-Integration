@@ -4,3 +4,5 @@ const { Schema } = mongoose;            // both are same :  const Schema = mongo
 const userSchema = new Schema({
     googleId: String
 });
+
+mongoose.model('users', userSchema);
