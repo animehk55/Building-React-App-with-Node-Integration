@@ -5,7 +5,7 @@ import {Nav,
         MenuItem,
         NavDropdown,
         }  from 'react-bootstrap';
-
+import './Header.css';
 class Header extends React.Component {
     render(){
          return(
@@ -13,7 +13,7 @@ class Header extends React.Component {
                 <Navbar inverse collapseOnSelect>
             <Navbar.Header>
               <Navbar.Brand>
-                <a href="#brand">React-Bootstrap</a>
+                <a href="#brand">React Project</a>
               </Navbar.Brand>
               <Navbar.Toggle />
             </Navbar.Header>
@@ -38,7 +38,7 @@ class Header extends React.Component {
                   Link Right
                 </NavItem>
                 <NavItem eventKey={2} href="#">
-                  Link Right
+                  Login with Google
                 </NavItem>
               </Nav>
             </Navbar.Collapse>
