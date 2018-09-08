@@ -5,7 +5,7 @@ require('./models/User');
 require('./services/passport');
 
 
-mongoose.connect('keys.mogoURI');
+mongoose.connect('mongodb://oauthstephen:animeshk55@ds249092.mlab.com:49092/oauthstephen', { useNewUrlParser: true });
 
 const app = express();
 

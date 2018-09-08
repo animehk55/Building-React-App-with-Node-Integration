@@ -17,6 +17,9 @@ passport.use(
 },
 (accessToken, refreshToken, profile, done) => {
     new User({ googleId: profile.id }).save(); 
+    // console.log('access token', accessToken);
+    // console.log('refresh token', refreshToken);
+    // console.log('profile', profile);
 }
 )
 ); 
