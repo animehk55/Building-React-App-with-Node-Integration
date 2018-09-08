@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-const Header = () => <h2>hi Header you are too cute </h2>;
+import Header from './subComponents/Header';
 const Dashboard = () => <h2>Dashboard</h2>;
 const SurveyNew = () => <h2>Hello Survey how are u</h2>;
 const Landing = () => <h2>Hello landinging</h2>
