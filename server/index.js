@@ -5,7 +5,6 @@ require('./models/User');
 require('./services/passport');
 
 
-
 mongoose.connect('keys.mogoURI');
 
 const app = express();
