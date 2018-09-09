@@ -6,8 +6,11 @@ import {Nav,
         NavDropdown,
         }  from 'react-bootstrap';
 import './Header.css';
+import { connect } from 'react-redux;'
+
 class Header extends React.Component {
     render(){
+      console.log(this.props);
          return(
             <div>
                 <Navbar inverse collapseOnSelect>
@@ -48,4 +51,8 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+function mapStateToProps({ auth }) {
+  return { auth };
+}
+
+export default connect()(Header);
