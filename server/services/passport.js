@@ -34,7 +34,7 @@ async (accessToken, refreshToken, profile, done) => {
    
         if (existingUser) {
             // we already have a record with the given profile ID
-            done(null, existingUser);
+            return done(null, existingUser);
         }
             // we don't have a user record with this ID, make a new record 
             const user = await new User({ googleId: profile.id }).save();
