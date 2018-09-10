@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import {Nav,
         Navbar,
         NavItem,
@@ -6,6 +7,7 @@ import {Nav,
         NavDropdown,
         }  from 'react-bootstrap';
 import './Header.css';
+
 class Header extends React.Component {
     render(){
          return(
